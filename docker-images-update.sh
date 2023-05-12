@@ -36,3 +36,6 @@ done
 # did everything finish correctly? Then we can exit
 echo "Docker images are now up to date"
 exit 0
+
+echo "Prune older images"
+Y | docker image prune -a
